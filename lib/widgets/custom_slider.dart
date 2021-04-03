@@ -38,7 +38,7 @@ class InactiveDot extends StatelessWidget {
 }
 
 /*
- * for slider home page
+ * for slider pages.home page
  */
 class CustomSliderWidget extends StatefulWidget {
   // final List<String> items;

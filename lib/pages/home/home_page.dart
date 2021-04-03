@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:uber_eats_prabhu/json/home_page_json.dart';
+import 'package:uber_eats_prabhu/pages/home/widgets/top_row.dart';
 import 'package:uber_eats_prabhu/pages/store_details_page.dart';
 import 'package:uber_eats_prabhu/theme/colors.dart';
 import 'package:uber_eats_prabhu/theme/styles.dart';
@@ -44,49 +45,9 @@ class _HomePageState extends State<HomePage> {
                     },
                     child: activeMenu == index
                         ? ElasticIn(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                  color: black,
-                                  borderRadius: BorderRadius.circular(30)),
-                              child: Padding(
-                                padding: EdgeInsets.only(
-                                    left: 15, right: 15, bottom: 8, top: 8),
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      menu[index],
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w500,
-                                        color: white,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ),
+                            child: TopRow(menuText: menu[index], containerColor: black, textColor: white),
                           )
-                        : Container(
-                            decoration: BoxDecoration(
-                                color: Colors.transparent,
-                                borderRadius: BorderRadius.circular(30)),
-                            child: Padding(
-                              padding: EdgeInsets.only(
-                                  left: 15, right: 15, bottom: 8, top: 8),
-                              child: Row(
-                                children: [
-                                  Text(
-                                    menu[index],
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w500,
-                                      color: black,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
+                        : TopRow(menuText: menu[index], containerColor: Colors.transparent, textColor: black),
                   ),
                 );
               }),

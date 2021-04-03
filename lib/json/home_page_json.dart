@@ -115,7 +115,7 @@ const List packForYou = [
         "https://images.unsplash.com/photo-1557499305-87bd9049ec2d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8&auto=format&fit=crop&w=800&q=60",
     "name": "2 Eggs Served with Home Fries and Toast",
     "description":
-        '2 eggs served your way with home fries and hot toast. Choicee of add...',
+        '2 eggs served your way with pages.home fries and hot toast. Choicee of add...',
     "price": "\$ 10.99"
   },
   {
