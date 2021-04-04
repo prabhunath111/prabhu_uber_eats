@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:uber_eats_prabhu/json/home_page_json.dart';
+import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/models/home_page_json.dart';
 import 'package:uber_eats_prabhu/pages/store_details/store_details_page.dart';
 import 'package:uber_eats_prabhu/theme/colors.dart';
 
@@ -16,7 +16,7 @@ class FirstMenu extends StatelessWidget {
               StoreDetailPage(img: firstMenu[0]['img'])));
         },
         child: Padding(
-          padding: EdgeInsets.only(left: 15, right: 15),
+          padding: EdgeInsets.only(left: 15, right: 15,),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:uber_eats_prabhu/json/home_page_json.dart';
+import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/models/home_page_json.dart';
 import 'package:uber_eats_prabhu/theme/colors.dart';
 import 'package:uber_eats_prabhu/theme/styles.dart';
 

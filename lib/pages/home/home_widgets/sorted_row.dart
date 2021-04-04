@@ -7,6 +7,7 @@ import 'package:uber_eats_prabhu/theme/styles.dart';
 class SortedRow extends StatelessWidget {
   final menu;
   final title;
+
   const SortedRow({Key key, this.menu, this.title}) : super(key: key);
 
   @override
@@ -17,18 +18,21 @@ class SortedRow extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: customTitle),
+          (title=='prabhu')?Container():Text(title, style: customTitle),
           SizedBox(
-            height: 15,
+            height: (title=='prabhu')?0:15,
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               children: List.generate(menu.length, (index) {
                 return GestureDetector(
-                  onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (_) =>
-                        StoreDetailPage(img: menu[index]['img'])));
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) =>
+                                StoreDetailPage(img: menu[index]['img'])));
                   },
                   child: Padding(
                     padding: const EdgeInsets.only(right: 15.0),
@@ -41,8 +45,7 @@ class SortedRow extends StatelessWidget {
                               width: size.width,
                               height: 160,
                               child: Image(
-                                image: NetworkImage(
-                                    menu[index]['img']),
+                                image: NetworkImage(menu[index]['img']),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -140,8 +143,7 @@ class SortedRow extends StatelessWidget {
                                   padding: EdgeInsets.all(5),
                                   child: Row(
                                     children: [
-                                      Text(menu[index]
-                                      ['rate_number']),
+                                      Text(menu[index]['rate_number']),
                                       SizedBox(width: 3),
                                       Icon(
                                         Icons.star,
