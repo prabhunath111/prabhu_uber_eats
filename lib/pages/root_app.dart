@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:uber_eats_prabhu/pages/account_page.dart';
-import 'package:uber_eats_prabhu/pages/grocery_page.dart';
+import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/pages/account/account_page.dart';
+import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/pages/grocery/grocery_page.dart';
 import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/pages/home/home_page.dart';
-import 'package:uber_eats_prabhu/pages/search_page.dart';
+import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/pages/search/search_page.dart';
 import 'package:uber_eats_prabhu/theme/colors.dart';
 
-import 'orders_page.dart';
+import 'orders/orders_page.dart';
 
 class RootApp extends StatefulWidget {
   @override

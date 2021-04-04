@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class TopRow extends StatelessWidget {
+class TopMenuRow extends StatelessWidget {
   final menuText;
   final containerColor;
   final textColor;
-  const TopRow({Key key, this.menuText, this.containerColor, this.textColor}) : super(key: key);
+  const TopMenuRow({Key key, this.menuText, this.containerColor, this.textColor}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
