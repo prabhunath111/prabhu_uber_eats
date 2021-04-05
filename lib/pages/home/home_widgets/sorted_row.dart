@@ -18,9 +18,9 @@ class SortedRow extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          (title=='prabhu')?Container():Text(title, style: customTitle),
+          (title=='')?Container():Text(title, style: customTitle),
           SizedBox(
-            height: (title=='prabhu')?0:15,
+            height: (title=='')?0:15,
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -126,7 +126,7 @@ class SortedRow extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(3)),
                               child: Padding(
                                 padding: EdgeInsets.all(5),
-                                child: Text(
+                                child: (title=='')?Text(menu[index]['time']):Text(
                                   menu[index]['rate'],
                                   style: TextStyle(fontSize: 14),
                                 ),
@@ -141,7 +141,7 @@ class SortedRow extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(3)),
                               child: Padding(
                                   padding: EdgeInsets.all(5),
-                                  child: Row(
+                                  child: (title=='')?Text(menu[index]['delivery_fee']):Row(
                                     children: [
                                       Text(menu[index]['rate_number']),
                                       SizedBox(width: 3),
@@ -151,10 +151,11 @@ class SortedRow extends StatelessWidget {
                                         size: 17,
                                       ),
                                       SizedBox(width: 3),
-                                      Text(menu[0]['time']),
+                                      Text(menu[index]['time']),
                                       SizedBox(width: 3),
                                     ],
-                                  )),
+                                  ),
+                              ),
                             ),
                           ],
                         )
