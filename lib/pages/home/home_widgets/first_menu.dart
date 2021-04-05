@@ -11,12 +11,17 @@ class FirstMenu extends StatelessWidget {
     return Container(
       width: size.width,
       child: GestureDetector(
-        onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (_) =>
-              StoreDetailPage(img: firstMenu[0]['img'])));
+        onTap: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (_) => StoreDetailPage(img: firstMenu[0]['img'])));
         },
         child: Padding(
-          padding: EdgeInsets.only(left: 15, right: 15,),
+          padding: EdgeInsets.only(
+            left: 15,
+            right: 15,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -47,8 +52,7 @@ class FirstMenu extends StatelessWidget {
               ),
               Text(
                 firstMenu[0]['name'],
-                style:
-                TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
               ),
               SizedBox(
                 height: 8,

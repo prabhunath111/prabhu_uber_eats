@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/models/home_page_json.dart';
 import 'package:uber_eats_prabhu/pages/home/home_widgets/categories_row.dart';
-import 'package:uber_eats_prabhu/pages/home/home_widgets/first_menu.dart';
 import 'file:///C:/Users/prabhunt/AndroidStudioProjects/uber_eats_prabhu/lib/widgets/custom_divider.dart';
 import 'package:uber_eats_prabhu/pages/home/home_widgets/location_row.dart';
 import 'package:uber_eats_prabhu/pages/home/home_widgets/sorted_row.dart';
